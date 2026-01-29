@@ -1,35 +1,82 @@
-[13:45:18] Player moved to 6,5
-[13:45:18] Enemy moved to 9,5
-[13:45:18] Player moved to 7,5
-[13:45:18] Enemy moved to 8,5
-[13:45:18] Attack Resolved.
-[13:45:18] Enemy Status now Alive: False
-[13:45:18] Player moved to 8,5
-[13:45:19] Player moved to 7,5
-[13:45:19] Player moved to 8,5
-[13:45:20] Player moved to 8,6
-[13:45:20] Player moved to 8,7
-[13:45:20] Player moved to 9,7
-[13:45:20] Player moved to 10,7
-[13:45:21] Player moved to 10,6
-[13:45:21] Player moved to 10,5
-[13:45:21] Player moved to 9,5
-[13:45:21] Player moved to 8,5
-[13:45:21] Player moved to 7,5
-[13:45:21] Player moved to 6,5
-[13:45:21] Player moved to 5,5
-[13:45:22] Player moved to 5,6
-[13:45:22] Player moved to 6,7
-[13:45:22] Player moved to 6,8
-[13:45:22] Player moved to 7,9
-[13:45:22] Player moved to 8,9
-[13:45:23] Player moved to 9,9
-[13:45:23] Player moved to 9,8
-[13:45:23] Player moved to 9,7
-[13:45:23] Player moved to 9,6
-[13:45:23] Player moved to 9,5
-[13:45:23] Player moved to 8,5
-[13:45:24] Player moved to 7,5
-[13:45:24] Player moved to 8,5
-[13:45:25] Player moved to 8,6
-[13:45:25] Player moved to 8,5
+[01:41:34] Player moved to [5,6]
+[01:41:34] Test Enemy 1 moved to [9,6]
+[01:41:34] Player moved to [5,7]
+[01:41:34] Test Enemy 1 moved to [8,7]
+[01:41:34] Test Enemy 2 moved to [10,7]
+[01:41:35] Player moved to [5,8]
+[01:41:35] Test Enemy 1 moved to [7,8]
+[01:41:35] Test Enemy 2 moved to [9,8]
+[01:41:35] Player moved to [5,9]
+[01:41:35] Test Enemy 1 moved to [6,9]
+[01:41:35] Test Enemy 2 moved to [8,9]
+[01:41:35] Player moved to [5,10]
+[01:41:35] Interaction Attempted. [Test Enemy 1 -> Player]
+[01:41:35] Test Enemy 2 moved to [7,10]
+[01:41:35] Player moved to [6,10]
+[01:41:35] Interaction Attempted. [Test Enemy 1 -> Player]
+[01:41:35] Interaction Attempted. [Test Enemy 2 -> Player]
+[01:41:35] Interaction Attempted. [Player -> Test Enemy 2]
+[01:41:35] Attack Resolved.
+[01:41:35] Enemy Status now Alive: False
+[01:41:35] Interaction Attempted. [Test Enemy 1 -> Player]
+[01:41:35] Player moved to [7,10]
+[01:41:35] Interaction Attempted. [Test Enemy 1 -> Player]
+[01:41:35] Test Enemy 3 moved to [11,10]
+[01:41:36] Player moved to [8,10]
+[01:41:36] Test Enemy 1 moved to [7,10]
+[01:41:36] Test Enemy 3 moved to [10,10]
+[01:41:36] Player moved to [8,9]
+[01:41:36] Interaction Attempted. [Test Enemy 1 -> Player]
+[01:41:36] Test Enemy 3 moved to [9,9]
+[01:41:36] Player moved to [8,8]
+[01:41:36] Test Enemy 1 moved to [8,9]
+[01:41:36] Interaction Attempted. [Test Enemy 3 -> Player]
+[01:41:36] Player moved to [8,7]
+[01:41:36] Test Enemy 1 moved to [8,8]
+[01:41:36] Interaction Attempted. [Test Enemy 3 -> Test Enemy 1]
+[01:41:36] Attack Resolved.
+[01:41:36] Enemy Status now Alive: False
+[01:41:36] Player moved to [8,6]
+[01:41:36] Test Enemy 3 moved to [8,8]
+[01:41:37] Player moved to [8,5]
+[01:41:37] Test Enemy 3 moved to [8,7]
+[01:41:37] Player moved to [9,5]
+[01:41:37] Test Enemy 3 moved to [9,6]
+[01:41:37] Player moved to [10,5]
+[01:41:37] Interaction Attempted. [Test Enemy 3 -> Player]
+[01:41:37] Player moved to [11,5]
+[01:41:37] Test Enemy 3 moved to [10,5]
+[01:41:37] Player moved to [12,5]
+[01:41:37] Test Enemy 3 moved to [11,5]
+[01:41:37] Player moved to [12,6]
+[01:41:37] Interaction Attempted. [Test Enemy 3 -> Player]
+[01:41:38] Player moved to [11,6]
+[01:41:38] Interaction Attempted. [Test Enemy 3 -> Player]
+[01:41:38] Interaction Attempted. [Player -> Test Enemy 3]
+[01:41:38] Attack Resolved.
+[01:41:38] Enemy Status now Alive: False
+[01:41:38] Player moved to [11,5]
+[01:41:38] Player moved to [11,4]
+[01:41:39] Player moved to [11,5]
+[01:41:39] Player moved to [11,6]
+[01:41:39] Player moved to [10,7]
+[01:41:39] Player moved to [9,7]
+[01:41:40] Player moved to [10,7]
+[01:41:40] Player moved to [9,7]
+[01:41:40] Player moved to [10,7]
+[01:41:40] Player moved to [9,7]
+[01:41:40] Player moved to [10,7]
+[01:41:40] Player moved to [9,7]
+[01:41:40] Player moved to [10,7]
+[01:41:40] Player moved to [9,7]
+[01:41:40] Player moved to [10,7]
+[01:41:40] Player moved to [9,7]
+[01:41:40] Player moved to [10,7]
+[01:41:40] Player moved to [9,7]
+[01:41:41] Player moved to [10,6]
+[01:41:41] Player moved to [11,5]
+[01:41:41] Player moved to [12,4]
+[01:41:41] Player moved to [13,4]
+[01:41:41] Player moved to [14,4]
+[01:41:41] Player moved to [15,4]
+[01:41:43] Proper exit reached. Exiting game.

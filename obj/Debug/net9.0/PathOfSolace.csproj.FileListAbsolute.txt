@@ -31,3 +31,4 @@ C:\Users\hejla\Documents\Path of Solace\PathOfSolace\obj\Debug\net9.0\refint\Pat
 C:\Users\hejla\Documents\Path of Solace\PathOfSolace\obj\Debug\net9.0\PathOfSolace.pdb
 C:\Users\hejla\Documents\Path of Solace\PathOfSolace\obj\Debug\net9.0\PathOfSolace.genruntimeconfig.cache
 C:\Users\hejla\Documents\Path of Solace\PathOfSolace\obj\Debug\net9.0\ref\PathOfSolace.dll
+C:\Users\hejla\Documents\Path of Solace\PathOfSolace\obj\Debug\net9.0\PathOfSolace.sourcelink.json

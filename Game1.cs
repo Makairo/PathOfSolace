@@ -13,9 +13,7 @@ public class Game1 : Game
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
     private const int TILE_SIZE = 32;
-    private Player _player;
-    private Enemy _enemy;
-    private Map _map;
+    private GameContext context;
     private Texture2D _pixel;
 
 
@@ -29,13 +27,21 @@ public class Game1 : Game
     protected override void Initialize()
     {
         Log.Clear();
-        _map = new Map(25, 15);
-        _player = new Player(5,5);
-        _enemy = new Enemy(10,5);
-        TurnManager.SetPlayer(_player);
-        TurnManager.SetEnemy(_enemy);
-        TurnManager.SetMap(_map);
+        Map map = new Map(25, 15);
+        Player player = new Player(5,5);
+        Enemy enemy = new Enemy("Test Enemy 1",10,5);
+        Enemy enemy2 = new Enemy("Test Enemy 2",11,7);
+        Enemy enemy3 = new Enemy("Test Enemy 3",12,9);
 
+        map.getTile(5,5).SetOccupant(player);
+        map.getTile(10,5).SetOccupant(enemy);
+        
+        context = new GameContext(map, player);
+        context.Enemies.Add(enemy);
+        context.Enemies.Add(enemy2);
+        context.Enemies.Add(enemy3);
+
+        TurnManager.Init(context);
         base.Initialize();
     }
 
@@ -66,32 +72,71 @@ public class Game1 : Game
         GraphicsDevice.Clear(Color.Black);
         _spriteBatch.Begin();
 
-        //Draw the map.
-        for(int x  = 0 ; x < _map.Width ; x++)
-        {
-            for(int y = 0 ; y < _map.Height ; y++)
-            {
-                Color color = _map.Tiles[x,y].IsWalkable ? Color.DarkSlateGray : Color.Gray;
+        DrawMap();
+        DrawEntities();
 
-                _spriteBatch.Draw(GetPixel(), new Rectangle( x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE), color);
-            }
-        }
-
-        // Draw enemy(ies)
-        _spriteBatch.Draw(
-            GetPixel(),
-            new Microsoft.Xna.Framework.Rectangle(_enemy.X * TILE_SIZE, _enemy.Y * TILE_SIZE, TILE_SIZE, TILE_SIZE),
-            Microsoft.Xna.Framework.Color.Red
-        );
-
-        //Draw player
-        _spriteBatch.Draw(GetPixel(), new Rectangle(_player.X * TILE_SIZE, _player.Y * TILE_SIZE, TILE_SIZE, TILE_SIZE), Color.Green);
-
-        
-        //Stop Drawing
         _spriteBatch.End();
         base.Draw(gameTime);
     }
+
+    private void DrawMap()
+    {
+        for (int x = 0; x < context.Map.Width; x++)
+        {
+            for (int y = 0; y < context.Map.Height; y++)
+            {
+                Tile tile = context.Map.Tiles[x, y];
+
+                Color color = tile.IsWalkable
+                    ? Color.DarkSlateGray
+                    : Color.Gray;
+
+                _spriteBatch.Draw(
+                    GetPixel(),
+                    new Rectangle(
+                        x * TILE_SIZE,
+                        y * TILE_SIZE,
+                        TILE_SIZE,
+                        TILE_SIZE),
+                    color
+                );
+            }
+        }
+    }
+
+    private void DrawEntities()
+    {
+        // Draw enemies
+        foreach (var enemy in context.Enemies)
+        {
+            if (!enemy.Alive)
+                continue;
+
+            _spriteBatch.Draw(
+                GetPixel(),
+                new Rectangle(
+                    enemy.X * TILE_SIZE,
+                    enemy.Y * TILE_SIZE,
+                    TILE_SIZE,
+                    TILE_SIZE),
+                Color.Red
+            );
+        }
+
+        // Draw player last so they’re on top
+        var player = context.Player;
+        _spriteBatch.Draw(
+            GetPixel(),
+            new Rectangle(
+                player.X * TILE_SIZE,
+                player.Y * TILE_SIZE,
+                TILE_SIZE,
+                TILE_SIZE),
+            Color.Green
+        );
+    }
+
+
 
     private Texture2D GetPixel()
     {

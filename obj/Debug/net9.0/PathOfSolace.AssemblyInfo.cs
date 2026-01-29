@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PathOfSolace")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8c01a0da4e582c375eb15fe28700eac14724034")]
 [assembly: System.Reflection.AssemblyProductAttribute("PathOfSolace")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PathOfSolace")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

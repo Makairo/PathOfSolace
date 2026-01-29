@@ -1,8 +1,8 @@
 using PathOfSolace.Entities;
 using PathOfSolace.Core;
-namespace PathOfSolace.Combat;
+namespace PathOfSolace.Core;
 
-public static class Combat
+public static class CombatSystem
 {
     public static void Resolve(Entity A, Entity B)
     {
