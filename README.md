@@ -9,6 +9,8 @@ Built with:
 - .NET for platform support
 - MonoGame as the game framework
 
+<img width="801" height="508" alt="POS1" src="https://github.com/user-attachments/assets/87c9304c-59ea-493f-9eba-4afa460fbb88" />
+
 ## Game Features
 - Grid based maps and movement.
 - Basic collision with environment / entities.
